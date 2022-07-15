@@ -5,21 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>JavaScript 100 plus Projects</title>
+    <link href="./assets/style.css" rel="stylesheet">
+    <title>JavaScript 100 plus DOM Projects</title>
 </head>
 
 <body>
 
     <header>
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-          </h1>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li tabindex="0">
+                            <a class="justify-between">
+                                Parent
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">100+ Simple Js Dom Projects</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal p-0">
+                    <li><a>Item 1</a></li>
+                    <li tabindex="0">
+                        <a>
+                            Parent
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn">Get started</a>
+            </div>
+        </div>
     </header>
     <main>
+        <!-- project-1 -->
+        <section class="project-1">
+            <div class="hero min-h-screen bg-green-100">
+                <div class="hero-content text-center">
+                    <div class="max-w-md">
+                        <h1 id="project-title1" class="text-3xl font-bold">SubTitle Show and Hide</h1>
+                        <p id="paragraph1" class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                            assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button id="project-btn1" class="btn btn-primary">Show Subtitle</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- project-2 -->
+        <section class="project-2">
+            <div id="project2-content" class="hero min-h-screen bg-blue-100">
 
+            </div>
+        </section>
+
+        <!-- project-3 -->
+        <section class="project-3">
+            <div class="hero min-h-screen bg-green-100">
+                <div class="hero-content text-center">
+                    <div class="max-w-5xl">
+                        <h1 id="project-title1" class="text-3xl mb-4 font-bold">Add your name to the list</h1>
+                        <input id="nameField" type="text" placeholder="Type here"
+                            class="input input-bordered input-primary input-md w-full max-w-3xl" />
+                        <ul id="nameList" class="menu bg-base-100 w-full mt-6">
+                            <li><a>Item 1</a></li>
+                            <li><a class="active">Item 2</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+
+    <script src="./assets/main.js"></script>
 </body>
 
 </html>
